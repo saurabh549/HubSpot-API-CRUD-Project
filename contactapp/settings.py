@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'contactapp.urls'
@@ -116,9 +117,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'contacts/static/contacts'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # Add this line if you have a 'static' directory in your project root
+    os.path.join(BASE_DIR, 'contacts/static/contacts'),  # Add this line if you have a 'static' directory in your project root
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -127,3 +128,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # vercel_app/settings.py
 WSGI_APPLICATION = 'vercel_app.wsgi.app'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"

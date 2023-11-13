@@ -8,6 +8,10 @@
         {
             "src": "/(.*)",
             "dest": "contactapp/wsgi.py"
-        }
+        },
+        {
+            "src": "/(.*)",
+            "dest": "contactapp/wsgi.py"
+          }
     ]
 }
