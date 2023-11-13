@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'contacts/static/contacts'
+STATIC_ROOT = os.path.join(BASE_DIR,'contacts/static/contacts')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'contacts/static/contacts'),  # Add this line if you have a 'static' directory in your project root
 ]
