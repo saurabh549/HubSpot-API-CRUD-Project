@@ -1,0 +1,150 @@
+/* contacts/static/contacts/style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+button {
+    margin-right: 10px; /* Adjust the right margin to add space between buttons */
+}
+
+div {
+    margin-top: 10px; /* Add top margin to the div containing the search input and buttons */
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px; /* Add right margin to the label for spacing */
+    color: #007bff;
+}
+
+input {
+    flex-grow: 1; /* Allow the input to grow and take available space */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove the default focus outline */
+}
+
+#searchContactBtn {
+    background-color: #ff1100;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#searchContactBtn:hover {
+    background-color: #52b922;
+}
+
+
+#fetchContactsBtn, #nextPageBtn, #CreateContactBtn {
+    margin-bottom: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#fetchContactsBtn:hover, #nextPageBtn:hover {
+    background-color: #218838;
+}
+
+#contactsTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactsTable th, #contactsTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#contactsTable th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#contactsTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.update-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* Add styles specific to the navbar */
+.navbar {
+    background-color: #007bff;
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin at the bottom to separate from content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a, .navbar button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px; /* Adjust margin for spacing */
+    padding: 8px 16px; /* Adjust padding for button size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container label {
+    color: white;
+    margin-right: 10px;
+}
+
+.search-container input {
+    margin-right: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-container button {
+    background-color: #f8f9fa; /* Set a different background color for the search button */
+}
