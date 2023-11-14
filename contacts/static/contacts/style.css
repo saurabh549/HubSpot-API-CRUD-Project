@@ -54,7 +54,7 @@ input:focus {
 }
 
 
-#fetchContactsBtn, #nextPageBtn, #CreateContactBtn {
+#nextPageBtn, #CreateContactBtn, #HomeBtn {
     margin-bottom: 10px;
     background-color: #28a745;
     color: #fff;
@@ -64,7 +64,7 @@ input:focus {
     cursor: pointer;
 }
 
-#fetchContactsBtn:hover, #nextPageBtn:hover {
+#nextPageBtn:hover, #HomeBtn:hover {
     background-color: #218838;
 }
 

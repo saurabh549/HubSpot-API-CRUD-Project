@@ -10,10 +10,10 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a href="/">Home</a>
+        <a id="HomeBtn" href="/">Home</a>
 
         <!-- Fetch Contacts button -->
-        <button id="fetchContactsBtn">Fetch Contacts</button>
+        <!-- <button id="fetchContactsBtn">Fetch Contacts</button> -->
 
         <!-- Create New Contacts button -->
         <a id="CreateContactBtn" href="/create_contact/">Create New Contacts</a>
@@ -27,17 +27,6 @@
     </div>
 
     <h1>Contact List</h1>
-    <!-- <div id="buttonContainer">
-        <button id="fetchContactsBtn">Fetch Contacts</button>
-        <a href="/create_contact/">
-            <button id="CreateContactBtn">Create New Contacts</button>
-        </a>
-        <div id="searchContactContainer">
-            <label for="contactIdInput">Search Contact by ID:</label>
-            <input type="text" id="contactIdInput" placeholder="Enter contact ID">
-            <button id="searchContactBtn">Search</button>
-        </div>
-    </div> -->
     </div>
     <script src="{% static 'contacts/app.js' %}"></script>
 </body>

@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchContacts('/contacts/');
 });
 
-document.getElementById('fetchContactsBtn').addEventListener('click', function () {
-    fetchContacts('/contacts/');
-});
+// document.getElementById('fetchContactsBtn').addEventListener('click', function () {
+//     fetchContacts('/contacts/');
+// });
 
 document.getElementById('searchContactBtn').addEventListener('click', function () {
     const contactId = document.getElementById('contactIdInput').value;
